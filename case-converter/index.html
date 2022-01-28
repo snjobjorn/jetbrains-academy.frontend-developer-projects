@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <script>
+        function uppercase() {
+            let text = document.querySelector("textarea").value;
+            document.querySelector("textarea").value =
+                text.toUpperCase();
+        }
+        function lowercase() {
+            let text = document.querySelector("textarea").value;
+            document.querySelector("textarea").value =
+                text.toLowerCase();
+        }
+        function propercase() {
+            let text = document.querySelector("textarea").value;
+            spisok = text.toLowerCase().split(' ');
+            document.querySelector("textarea").value =
+                spisok.map(function(word) {
+                        return (word.charAt(0).toUpperCase() + word.slice(1));}).join(' ');
+        }
+        function sentencecase() {
+            let text = document.querySelector("textarea").value;
+            spisok = text.toLowerCase().split('. ');
+            document.querySelector("textarea").value =
+                spisok.map(function(word) {
+                    return (word.charAt(0).toUpperCase() + word.slice(1));}).join('. ');
+        }
+        function download(filename, text) {
+            let element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+
+            element.style.display = 'none';
+            document.body.appendChild(element);
+
+            element.click();
+
+            document.body.removeChild(element);
+        }
+    </script>
+</head>
+<body style="flex-direction: column;">
+    <div class="title"><b>Case Converter</b></div>
+    <textarea style="width: 520px; height: 200px;"></textarea>
+    <div>
+        <button style="background-color: orange; padding: 5px 10px; color: black;" id="upper-case" onclick="uppercase()">Upper Case</button>
+        <button style="background-color: orange; padding: 5px 10px; color: black;" id="lower-case" onclick="lowercase()">Lower Case</button>
+        <button style="background-color: orange; padding: 5px 10px; color: black;" id="proper-case" onclick="propercase()">Proper Case</button>
+        <button style="background-color: orange; padding: 5px 10px; color: black;" id="sentence-case" onclick="sentencecase()">Sentance Case</button>
+        <button style="background-color: orange; padding: 5px 10px; color: black;" id="save-text-file" onclick="download('text.txt',document.querySelector('textarea').value)">Save Text File</button>
+    </div>
+</body>
+</html>

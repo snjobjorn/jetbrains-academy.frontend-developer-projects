@@ -1,0 +1,63 @@
+input[type=checkbox] {
+    background-color: lightskyblue;
+}
+
+input[type=checkbox] + span {
+    background-color: lightgray;
+}
+
+input[type=checkbox]:checked + span {
+    background-color: lightgray;
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    position: center;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    height: 27px;
+    width: 27px;
+    font-family: 'Permanent Marker';
+    font-size: 10px;
+}
+
+body {
+    border-bottom: 2px solid rebeccapurple;
+    border-top: 2px solid rebeccapurple;
+    border-left: 2px solid rebeccapurple;
+    border-right: 2px solid rebeccapurple;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    margin-left: 40px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+}
+
+#input-task {
+    margin-left: 40px;
+    border-bottom: 2px solid rebeccapurple;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 10px;
+    background-color: ghostwhite;
+}
+
+.task {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+#add-task-button {
+    background-color: hotpink;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 10px;
+}
+
+html {
+    text-align: center;
+}

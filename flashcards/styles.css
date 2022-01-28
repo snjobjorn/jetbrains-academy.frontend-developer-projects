@@ -1,0 +1,85 @@
+.container {
+    border: 2px solid steelblue;
+    background-color: ghostwhite;
+    border-radius: 25px;
+    display: flex;
+    padding: 2%;
+    width: 45%;
+    margin: auto;
+    flex-direction: column;
+}
+body {
+    background-color: gray;
+    padding: 2%;
+}
+h1 {
+    color: ghostwhite;
+    border: 2px solid cornflowerblue;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+    margin: auto;
+    padding: 2%;
+    width: 80%;
+}
+.country {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: ghostwhite;
+    border: 2px solid lightskyblue;
+    background-color: lightskyblue;
+    border-radius: 25px;
+    padding: 2%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+}
+div, h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+.card {
+    margin: 10px;
+    color: steelblue;
+    padding: 0.5%;
+    border: 2px solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 17vw;
+    height: 17vw;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+.front,
+.back {
+    margin: 10px;
+    color: steelblue;
+    padding: 0.5%;
+    border: 2px solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    text-align: center;
+    width: 17vw;
+    height: 17vw;
+    position: absolute;
+}
+.front {
+    background: linear-gradient(antiquewhite, #2af598);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back {
+    background: linear-gradient(antiquewhite, #ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.card:hover {
+    transform: rotateY(180deg);
+}

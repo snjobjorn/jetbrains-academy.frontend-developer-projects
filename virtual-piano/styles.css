@@ -1,0 +1,81 @@
+body {
+    background-color: steelblue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.white-keys kbd {
+    background-color: white;
+    border: 1px solid;
+    text-align: center;
+    width: 60px;
+    height: 150px;
+    line-height: 280px;
+}
+
+.black-keys kbd {
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+    width: 30px;
+    height: 100px;
+    color: white;
+    z-index: 2;
+    line-height: 170px;
+    display: inline-block;
+    position: absolute;
+}
+
+#KeyW {
+    left: 10.8%;
+}
+
+#KeyE {
+    left: 25%;
+}
+
+#KeyT {
+    left: 53%;
+}
+
+#KeyY {
+    left: 67.3%;
+}
+
+#KeyU {
+    left: 81.4%;
+}
+
+.white-keys {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /*top: -102px;*/
+}
+
+.black-keys {
+    display: flex;
+    justify-content: space-around;
+}
+
+kbd {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container {
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    top: 17%;
+    left: 33%;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body onload="presskey()">
+    <div class="container">
+        <h1>Virtual Piano</h1>
+        <div class="black-keys">
+            <kbd onclick="presskey()" id="KeyW">W</kbd>
+            <kbd onclick="presskey()" id="KeyE">E</kbd>
+            <kbd onclick="presskey()" id="KeyT">T</kbd>
+            <kbd onclick="presskey()" id="KeyY">Y</kbd>
+            <kbd onclick="presskey()" id="KeyU">U</kbd>
+        </div>
+        <div class="white-keys">
+            <kbd onclick="presskey()">A</kbd>
+            <kbd onclick="presskey()">S</kbd>
+            <kbd onclick="presskey()">D</kbd>
+            <kbd onclick="presskey()">F</kbd>
+            <kbd onclick="presskey()">G</kbd>
+            <kbd onclick="presskey()">H</kbd>
+            <kbd onclick="presskey()">J</kbd>
+        </div>
+    </div>
+</body>
+</html>

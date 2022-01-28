@@ -1,0 +1,117 @@
+html {
+    background-color: black;
+    text-align: center;
+    height: auto;
+}
+
+body {
+    background-color: black;
+    border: 2px solid black;
+    padding: 0 15%;
+}
+
+.planet-area {
+    width: 45%;
+    height: 100%;
+
+}
+
+.control-panel {
+    width: 45%;
+    height: 100%;
+    /*background-color: yellow;*/
+    background-image: linear-gradient(45deg, #000000 25%, yellow 25%, yellow 50%, #000000 50%, #000000 75%, yellow 75%, yellow 100%);
+    background-size: 56.57px 56.57px;
+    margin-top: 2%;
+    border: 3px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-panel__inner {
+    width: 94%;
+    height: 98%;
+    background-color: dimgrey;
+    margin: 2%;
+    border: 3px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.space {
+    background: url("images/space.png");
+    white-space: nowrap;
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+img.planet {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    /*top: 339px;*/
+    /*right: 1px;*/
+}
+
+img.rocket {
+    position: relative;
+    width: 40%;
+    transform: rotate(27deg);
+    z-index: 1;
+    top: -145px;
+    right: 150px;
+}
+
+input[type="range"] {
+    width: 50px;
+    transform: rotate(270deg);
+    height: 100px;
+}
+
+.levers {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.check-buttons {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+input[type="password"] {
+    width: 60%;
+    height: 2%;
+    border-color: yellow;
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-left: 20%;
+    background-color: dimgrey;
+    color: white;
+
+}
+
+input[type="button"][value="ok"] {
+    width: 20%;
+    height: 2%;
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-bottom: 4%;
+    background-color: yellow;
+}
+
+input[type="button"][value="launch"] {
+    width: 20%;
+    height: 10%;
+    border-radius: 30px;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-bottom: 4%;
+    background-color: red;
+    border-color: yellow;
+    color: white;
+}
